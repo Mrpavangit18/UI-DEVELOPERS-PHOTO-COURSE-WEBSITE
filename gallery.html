@@ -1,0 +1,88 @@
+gallery.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-ZeSIfK6MTrI/8tWphq2/CvXVv8dHOGpKBJbukYPOvlP5yIz7bzr7t6c1ecVXERnE" crossorigin="anonymous">
+    <title>Photography Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        .gallery-section {
+            padding: 40px 0;
+        }
+
+        .gallery-section h2 {
+            color: #343a40;
+        }
+
+        .gallery-images img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #fff;
+            background-color: #343a40;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-3">
+        <img src="https://cdn.vectorstock.com/i/1000x1000/22/26/photo-gallery-neon-glow-icon-vector-38172226.webp" alt="Logo" class="img-fluid" width="100">
+        <h1>Photography Gallery</h1>
+    </header>
+
+    <section class="container mt-5">
+        <div class="gallery-section">
+            <h2>Portrait Photography</h2>
+            <div class="gallery-images">
+                <img src="https://source.unsplash.com/800x600/?portrait" alt="Portrait 1">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+        <div class="gallery-section">
+            <h2>Landscape Photography</h2>
+            <div class="gallery-images">
+                <img src="https://source.unsplash.com/800x600/?landscape" alt="Landscape 1">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+        <!-- Add more sections for different categories -->
+
+        <button class="back-button" onclick="window.location.href='index.html'">&#8592; Back to Home</button>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 Photography Course. All rights reserved. | <a href="https://www.pavanphotocourse.in" target="_blank" class="text-white">pavanphotocourse.in</a></p>
+    </footer>
+</body>
+</html>

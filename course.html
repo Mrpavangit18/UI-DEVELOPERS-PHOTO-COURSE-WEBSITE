@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-ZeSIfK6MTrI/8tWphq2/CvXVv8dHOGpKBJbukYPOvlP5yIz7bzr7t6c1ecVXERnE" crossorigin="anonymous">
+    <title>Photography Course</title>
+    <style>
+       body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        .course-details {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .course-details h2 {
+            color: #343a40;
+        }
+
+        .course-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-details li {
+            margin-bottom: 10px;
+        }
+
+        .registration-form {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .registration-form h2 {
+            color: #343a40;
+        }
+
+        .registration-form form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .registration-form button {
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .confirmation-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .confirmation-message h2 {
+            color: #155724;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #fff;
+            background-color: #343a40;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-3">
+        <img src="https://aaft.edu.in/wp-content/uploads/2022/05/B.A.-Photography-1.jpg" alt="Logo" class="img-fluid" width="100">
+        <h1>Photography Course</h1>
+    </header>
+
+    <section class="container mt-5">
+        <div class="course-details">
+            <h2>Photography Course Details</h2>
+            <p>Join our comprehensive photography course to enhance your skills and unleash your creativity behind the lens.</p>
+            <ul>
+                <li>Duration: 8 weeks</li>
+                <li>Classes: Twice a week</li>
+                <li>Location: Pune City, Pune</li>
+                <li>Cost: Rs 3000</li>
+            </ul>
+        </div>
+
+        <div class="registration-form">
+            <h2>Registration</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Registration</button>
+            </form>
+        </div>
+
+        <div class="confirmation-message">
+            <h2>Registration Done!</h2>
+            <p>We will contact you shortly with further details. Thank you for choosing our photography course!</p>
+        </div>
+        <button class="back-button" onclick="window.location.href='index.html'">&#8592; Home</button>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 Photography Course. All rights reserved. | <a href="https://www.pavanphotocourse.in" target="_blank" class="text-white">pavanphotocourse.in</a></p>
+    </footer>
+</body>
+</html>

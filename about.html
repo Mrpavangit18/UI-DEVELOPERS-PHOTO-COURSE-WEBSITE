@@ -1,0 +1,89 @@
+about.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-ZeSIfK6MTrI/8tWphq2/CvXVv8dHOGpKBJbukYPOvlP5yIz7bzr7t6c1ecVXERnE" crossorigin="anonymous">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 2px;
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            color: #343a40;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 2px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-3">
+        <img src="data:image/png;base64,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" alt="Logo" class="img-fluid" width="100">
+        <h1>About Us</h1>
+    </header>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Our Story</h2>
+                <p class="mt-4"></p>We are passionate about photography and committed to helping you become a skilled photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                At Photography Course, our journey began with a shared passion for capturing moments that transcend time. We believe in the power of photography to convey emotions, narrate stories, and freeze precious moments in a frame.</p>
+
+                Our team consists of experienced photographers and educators who are dedicated to imparting their knowledge and skills to aspiring photographers like you. We understand that photography is not just about holding a camera; it's about understanding light, composition, and the unique perspective each individual brings to their craft.</p>
+    
+                Whether you're a beginner looking to grasp the basics or an enthusiast eager to refine your skills, our courses are designed to cater to all levels. Join us on this exciting journey of discovery, where you'll not only learn the technical aspects of photography but also unlock your creative potential.</p>
+    
+            </div>
+            <div class="col-md-6">
+                <h2>Contact Information</h2>
+                <address>
+                    <p><strong>Photography Course</strong></p>
+                    <p>123 Pune city, Pune</p>
+                    <p>Email: info@pavanphotocourse.in</p>
+                </address>
+            </div>
+            <div class="map"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.70906459657!2d73.69814984457464!3d18.52487061439116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1704460502538!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map"></div>
+        </div>
+    </section>
+
+    <!-- Add more sections as needed -->
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 Photography Course. All rights reserved. | <a href="https://www.pavanphotocourse.in" target="_blank" class="text-white">pavanphotocourse.in</a></p>
+    </footer>
+</body>
+</html>
